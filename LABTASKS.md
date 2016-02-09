@@ -6,7 +6,11 @@
 
 ##### What are the differences between the folder structure of this project and the previous one? Note that api/pets is server-side routing specific to the database, and the client folder contains the client-side portion of the project.
 
+-bower components are in the client side as compaired to server side. These is an api folder that is has two .js files in it.
+
 ##### How is app.js (at the project root) different from the ones in the previous two labs? Give examples of the kinds of urls that app.js handles, and describe where each case will be routed.
+
+-There is more mongo stuff.
 
 ##### The project is connected to the database via mongoose. Where is this connection set?
 
