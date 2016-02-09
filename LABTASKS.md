@@ -34,13 +34,20 @@
 
 ##### What views are used in the project?
 
-##### We've seen a few different ways to display HTML in the last couple labs (straight, individual HTML pages and components being added to HTML). How are HTML files combined and displayed in this lab? 
+- 404, about, main each having their own folder, with under views index
+
+##### We've seen a few different ways to display HTML in the last couple labs (straight, individual HTML pages and components being added to HTML). How are HTML files combined and displayed in this lab?
+
+- index.html and 404.html are both complete HTML documents. However, about.html and main.html are both HTML fragments being inserted elsewhere, specifically into the index.html.
 
 >Protip: main.html isn't a full HTML document, so how does it get displayed?
 
 ##### Where is the code for the navigation bar located? How is it connected to the pages of the project?
+- In ./client/components/navbar. It's loaded as an Angular component into the other pages.
 
 ##### client/app.js performs client-side routing. How do you think it works?
+
+- It tells the ui-view div to display the HTML you've requested. If the requested "page" (or fragment) doesn't exist, it sends you to the 404 page.
 
 ## Part 2: Add another field to pet data.
 
