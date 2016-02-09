@@ -14,14 +14,23 @@
 
 ##### The project is connected to the database via mongoose. Where is this connection set?
 
+- Its with in app.js.
+
 ##### Explain how api/pets/pets.controller.js gets added to app.js (remember this is all server-side).
+
+- Pets controller is exporting to the mongoose var, then the app.js is then connecting to mongosse to find the var that the api/pets/pets.controller.js is exporting to allow other elements to see it.
 
 ##### Study the file api/pets/pets.controller.js, answer the following questions:
 -  What kind of documents would the database contain? What is the field in the model?
+   - The database is containing pets. Its a string, we assume its the pet name.
 -  What functions are defined in the controller? How do they change the database data?
+   - index, create, destroy. Index is returning something, create is creating a new document, destroy deletes document.
 -  How does one get or delete elements in the database?
+   - You can request that the server give you information.
 
 ##### What is the purpose of index.js in the api/pets? Where is it referenced?
+
+-defining the API to interact with the database.
 
 ##### What views are used in the project?
 
