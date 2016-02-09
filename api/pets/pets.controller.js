@@ -6,7 +6,8 @@ var mongoose = require('mongoose');
 // =====================================================
 
 var Pet = mongoose.model('Pet', {
-    text: String
+    petName: "string",
+    weight: "number"
 });
 
 // Defining Routes

@@ -7,7 +7,7 @@ angular.module('stdComponents').controller('navbarCtl', function($location){
 
     self.location = $location.path();
 
-    self.textField = "";
+    self.nameField = "";
 
     self.pages = [
         {text: "Home", link: '/'},
