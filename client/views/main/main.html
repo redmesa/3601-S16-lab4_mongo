@@ -17,5 +17,6 @@
 
         </li>
         <li class="list-group-item" ng-repeat="pet in main.data">Pet Name: {{pet.petName}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pet weight: {{pet.weight}}<span class="glyphicon glyphicon-trash floatRight" style="color: red" ng-click="main.removeData($index)"></span></li>
+        <span class="floatRight">Heaviest Pet -  <b>{{main.getHeaviestPet()}}</b></span>
     </ul>
 </div>
