@@ -24,7 +24,7 @@ angular.module("appModule")
         if(self.letToNum(self.gradeField) != -1 && !isNaN(parseInt(self.creditsField))) {
             $http.post('api/gpa', {
                 name: self.courseField,
-                grade: parseInt(self.gradeField),
+                grade: self.letToNum(self.gradeField),
                 credits: parseInt(self.creditsField)
 
             }).success(function () {
