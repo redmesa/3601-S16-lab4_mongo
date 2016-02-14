@@ -29,7 +29,7 @@ app.use(express.static('client'));
 //mongoose.connect(mongoConfig.mongo.host, mongoConfig.mongo.db, mongoConfig.mongo.port, mongoConfig.mongo.options);
 
 // Connect to local Mongo Database. This should work on the lab machines, if it doesn't we need to investigate...
-mongoose.connect('mongodb://127.0.0.1:27017/pets');
+mongoose.connect('mongodb://127.0.0.1:27017/database');
 
 //==== Misc ===================================================================
 
@@ -44,6 +44,7 @@ var options = {
 
 // API Routes
 app.use('/api/pets', require('./api/pets'));
+app.use('/api/gpa', require('./api/gpa'));
 
 // Non-API routes
 app.get('/*', function(req, res){
@@ -65,6 +66,3 @@ var server = app.listen(9000, function(){
 
     console.log("server listening on http://%s:%s", host, port);
 });
-
-
-

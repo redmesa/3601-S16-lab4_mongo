@@ -1,0 +1,22 @@
+
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<hr>
+<div class="container">
+    <ul class="list-group">
+        <li class="list-group-item">
+
+            <form ng-submit="gpa.addData()">
+                <input ng-model="gpa.courseField" type="text" size="25" placeholder="Enter your course name">
+                <input ng-model="gpa.gradeField" type="text" size="25" placeholder="Enter your letter grade">
+                <input ng-model="gpa.creditsField" type="text" size="25" placeholder="Enter the number of credits">
+                <input type="submit" value="submit" class="btn btn-primary">
+                <span class="floatRight">Courses in this list: {{gpa.itemsInList()}}</span>
+            </form>
+
+        </li>
+        <li class="list-group-item" ng-repeat="Course in gpa.courses track by $index">Course: {{class.name}} Grade: {{class.grade}} Credits: {{class.credits}}<span class="glyphicon glyphicon-trash floatRight" style="color: red" ng-click="gpa.removeData($index)"></span></li>
+    </ul>
+
+    <h1>Your GPA is: {{gpa.getGPA()}} </h1>
+</div>

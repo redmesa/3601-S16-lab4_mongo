@@ -56,7 +56,7 @@ angular.module("appModule")
 
         for(var i = 0; i < self.courses.length; i++) {
             totalCredits += parseFloat(self.courses[i].credits);
-            GP += self.letToNum(self.courses[i].grade) * parseInt(self.courses[i].credits);
+            GP += self.courses[i].grade * parseInt(self.courses[i].credits);
         }
 
         return (GP/totalCredits).toFixed(2);
