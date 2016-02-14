@@ -12,7 +12,8 @@ angular.module('stdComponents').controller('navbarCtl', function($location){
     self.pages = [
         {text: "Home", link: '/'},
         {text: "About", link: '/about'},
-        {text: "404 Page", link: '/404'}
+        {text: "404 Page", link: '/404'},
+        {text: "GPA Calculator", link: '/gpa'}
     ];
 
     self.isActive = function(route){
