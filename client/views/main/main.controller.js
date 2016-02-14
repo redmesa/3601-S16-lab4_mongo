@@ -27,7 +27,6 @@ angular.module("appModule")
                     weight: parseInt(self.weightField)
                 }).success(function () {
                     self.getPets();
-                    console.log("You are here");
                 });
                 self.nameField = "";
                 self.weightField = "";
