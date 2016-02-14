@@ -48,7 +48,7 @@ angular.module("appModule")
         return self.courses.length;
     };
 
-    mainControl.getGPA = function() {
+    self.getGPA = function() {
         if (self.courses.length == 0) {return "";}
 
         var GP = 0.00;
