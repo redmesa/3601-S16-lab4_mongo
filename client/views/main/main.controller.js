@@ -32,7 +32,7 @@ angular.module("appModule")
                 self.nameField = "";
                 self.weightField = "";
             } else {
-                alert("Invalid Data! Try again...")
+                alert("Invalid Entry! Try again...")
             }
         };
 
