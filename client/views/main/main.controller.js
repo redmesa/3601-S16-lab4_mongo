@@ -41,10 +41,6 @@ angular.module("appModule")
             });
         };
 
-        self.cat = function(str1, str2){
-            return str1 + str2;
-        };
-
         self.itemsInList = function(){
             return self.data.length;
         };
@@ -56,6 +52,10 @@ angular.module("appModule")
                 if (self.data[i].weight > heaviestPet.weight) {
                     heaviestPet = self.data[i];
                 }
+            }
+
+            if (heaviestPet.weight == 0 && heaviestPet.petName == null) {
+                return "No pets found!";
             }
 
             return "Name: " + heaviestPet.petName + ", Weight: " + heaviestPet.weight;
