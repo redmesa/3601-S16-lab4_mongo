@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 // Defining Model
 // =====================================================
 
-var GPA = mongoose.model('Course', {
+var GPA = mongoose.model('GPA', {
     name: "string",
     grade: "number",
     credits: "number"

@@ -15,7 +15,7 @@
             </form>
 
         </li>
-        <li class="list-group-item" ng-repeat="class in gpa.courses track by $index">Course: {{class.name}} &ensp;&ensp; Grade: {{class.grade}} &ensp;&ensp; Credits: {{class.credits}}<span class="glyphicon glyphicon-trash floatRight" style="color: red" ng-click="gpa.removeData($index)"></span></li>
+        <li class="list-group-item" ng-repeat="class in gpa.courses">Course: {{class.name}} &ensp;&ensp; Grade: {{class.grade}} &ensp;&ensp; Credits: {{class.credits}}<span class="glyphicon glyphicon-trash floatRight" style="color: red" ng-click="gpa.removeData($index)"></span></li>
     </ul>
 
     <h1>Your GPA is: {{gpa.getGPA()}} </h1>

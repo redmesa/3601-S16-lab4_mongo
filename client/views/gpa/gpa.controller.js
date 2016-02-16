@@ -39,7 +39,7 @@ angular.module("appModule")
     };
 
     self.removeData = function(index){
-        $http.delete('/api/gpa/' + self.data[index]._id).success(function(){
+        $http.delete('/api/gpa/' + self.courses[index]._id).success(function(){
             self.getCourses();
         });
     };
