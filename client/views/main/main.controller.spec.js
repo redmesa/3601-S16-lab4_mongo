@@ -23,12 +23,13 @@ describe('Testing controller: mainCtrl', function(){
     });
 
     it("Can find the heaviest pet", function(){
-        expect(scope.main.getHeaviestPet()).toBe("");
+        expect(scope.main.getHeaviestPet()).toBe("No pets found!");
         scope.main.data = [
             {petName: "Jan", weight: 10},
             {petName: "Marcia", weight: 20},
             {petName: "Cindy", weight: 5},
         ];
+        expect(scope.main.getHeaviestPet()).toBe("Name: Marcia, Weight: 20")
     });
 
     it('dummy test should pass', function(){
